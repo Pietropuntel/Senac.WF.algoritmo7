@@ -39,7 +39,6 @@
             linkLabel1 = new LinkLabel();
             label1 = new Label();
             label2 = new Label();
-            button4 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -130,6 +129,7 @@
             button3.TabIndex = 5;
             button3.Text = "-";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // linkLabel1
             // 
@@ -162,22 +162,12 @@
             label2.TabIndex = 8;
             label2.Text = "__________________________";
             // 
-            // button4
-            // 
-            button4.Location = new Point(891, 55);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 34);
-            button4.TabIndex = 9;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(971, 592);
-            Controls.Add(button4);
             Controls.Add(linkLabel1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -209,6 +199,5 @@
         private LinkLabel linkLabel1;
         private Label label1;
         private Label label2;
-        private Button button4;
     }
 }

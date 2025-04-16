@@ -1,4 +1,4 @@
- namespace WF.LOGIN
+namespace projeto_windows_forms_07
 {
     internal static class Program
     {

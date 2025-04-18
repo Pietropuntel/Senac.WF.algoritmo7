@@ -102,6 +102,7 @@
             button1.TabIndex = 3;
             button1.Text = "Comfirmar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -150,6 +151,7 @@
             label1.Size = new Size(222, 25);
             label1.TabIndex = 7;
             label1.Text = "______________________________";
+            label1.Click += label1_Click_1;
             // 
             // label2
             // 
@@ -178,6 +180,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Opacity = 0.8D;
             Text = "Form1";

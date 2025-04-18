@@ -96,5 +96,18 @@ namespace projeto_windows_forms_07
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var formPrincipal = new FormPrincipal();
+            formPrincipal.Show();
+
+        }
     }
 }

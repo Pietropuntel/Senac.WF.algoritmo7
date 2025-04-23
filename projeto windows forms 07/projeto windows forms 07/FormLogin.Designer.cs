@@ -1,6 +1,6 @@
 ﻿namespace projeto_windows_forms_07
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
@@ -67,10 +67,11 @@
             // 
             textBox1.BackColor = SystemColors.Desktop;
             textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.Blue;
             textBox1.Location = new Point(530, 214);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(270, 24);
+            textBox1.Size = new Size(270, 32);
             textBox1.TabIndex = 1;
             textBox1.Text = "Usuario";
             textBox1.Enter += textBox1_Enter;
@@ -80,10 +81,11 @@
             // 
             textBox2.BackColor = Color.Black;
             textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Red;
             textBox2.Location = new Point(530, 288);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(322, 24);
+            textBox2.Size = new Size(322, 32);
             textBox2.TabIndex = 2;
             textBox2.Text = "Senha";
             textBox2.TextChanged += textBox2_TextChanged;
@@ -95,10 +97,11 @@
             button1.BackColor = Color.Black;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(192, 192, 0);
-            button1.Location = new Point(644, 395);
+            button1.Location = new Point(627, 395);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(143, 34);
             button1.TabIndex = 3;
             button1.Text = "Comfirmar";
             button1.UseVisualStyleBackColor = false;
@@ -135,20 +138,22 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(627, 475);
+            linkLabel1.Location = new Point(616, 457);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(160, 25);
             linkLabel1.TabIndex = 0;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "esquceu sua senha";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Blue;
             label1.Location = new Point(530, 232);
             label1.Name = "label1";
-            label1.Size = new Size(222, 25);
+            label1.Size = new Size(314, 32);
             label1.TabIndex = 7;
             label1.Text = "______________________________";
             label1.Click += label1_Click_1;
@@ -157,10 +162,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ActiveCaptionText;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Red;
             label2.Location = new Point(533, 303);
             label2.Name = "label2";
-            label2.Size = new Size(194, 25);
+            label2.Size = new Size(274, 32);
             label2.TabIndex = 8;
             label2.Text = "__________________________";
             // 

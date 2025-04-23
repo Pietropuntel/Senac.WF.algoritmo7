@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projeto_windows_forms_07
 {
-    public partial class FormPrincipal : Form
+    public partial class FormEntrega : Form
     {
-        public FormPrincipal()
+        public FormEntrega()
         {
             InitializeComponent();
         }
@@ -35,12 +35,6 @@ namespace projeto_windows_forms_07
         private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnProdutos_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new FormProdutos().Show();
         }
     }
 }

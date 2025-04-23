@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projeto_windows_forms_07
 {
-    public partial class FormPrincipal : Form
+    public partial class FormProdutos : Form
     {
-        public FormPrincipal()
+        public FormProdutos()
         {
             InitializeComponent();
         }
@@ -37,10 +37,15 @@ namespace projeto_windows_forms_07
 
         }
 
-        private void btnProdutos_Click(object sender, EventArgs e)
+        private void BtnVoltar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new FormProdutos().Show();
+            new FormPrincipal().Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

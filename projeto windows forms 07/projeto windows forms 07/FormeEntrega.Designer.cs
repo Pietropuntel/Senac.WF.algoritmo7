@@ -1,6 +1,6 @@
 ﻿namespace projeto_windows_forms_07
 {
-    partial class FormPrincipal
+    partial class FormEntrega
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             button3 = new Button();
             button5 = new Button();
             button2 = new Button();
-            btnProdutos = new Button();
+            button4 = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -55,7 +55,7 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button2);
-            panel1.Controls.Add(btnProdutos);
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -117,24 +117,23 @@
             button2.TextAlign = ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = true;
             // 
-            // btnProdutos
+            // button4
             // 
-            btnProdutos.FlatAppearance.BorderSize = 0;
-            btnProdutos.FlatAppearance.MouseDownBackColor = Color.Red;
-            btnProdutos.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnProdutos.FlatStyle = FlatStyle.Flat;
-            btnProdutos.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnProdutos.ForeColor = Color.Red;
-            btnProdutos.Image = (Image)resources.GetObject("btnProdutos.Image");
-            btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProdutos.Location = new Point(35, 156);
-            btnProdutos.Name = "btnProdutos";
-            btnProdutos.Size = new Size(192, 68);
-            btnProdutos.TabIndex = 0;
-            btnProdutos.Text = "  Produtos";
-            btnProdutos.TextAlign = ContentAlignment.MiddleRight;
-            btnProdutos.UseVisualStyleBackColor = true;
-            btnProdutos.Click += btnProdutos_Click;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Red;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.Red;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(35, 156);
+            button4.Name = "button4";
+            button4.Size = new Size(192, 68);
+            button4.TabIndex = 0;
+            button4.Text = "  Produtos";
+            button4.TextAlign = ContentAlignment.MiddleRight;
+            button4.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -259,7 +258,7 @@
         private Button button1;
         private Button button3;
         private Button button2;
-        private Button btnProdutos;
+        private Button button4;
         private PictureBox pictureBox1;
         private Button button5;
         private Label label1;

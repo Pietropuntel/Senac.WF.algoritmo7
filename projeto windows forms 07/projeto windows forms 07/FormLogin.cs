@@ -2,9 +2,9 @@ using System.Windows.Forms;
 
 namespace projeto_windows_forms_07
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -107,6 +107,11 @@ namespace projeto_windows_forms_07
             this.Hide();
             var formPrincipal = new FormPrincipal();
             formPrincipal.Show();
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
 
         }
     }

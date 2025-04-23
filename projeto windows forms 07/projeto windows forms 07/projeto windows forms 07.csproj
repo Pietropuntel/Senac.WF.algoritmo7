@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="FormePagto.cs" />
+    <Compile Update="FormClientes.cs" />
+    <Compile Update="FormeEntrega.cs" />
+    <Compile Update="FormProdutos.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

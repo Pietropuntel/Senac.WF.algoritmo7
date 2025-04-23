@@ -1,6 +1,6 @@
 ﻿namespace projeto_windows_forms_07
 {
-    partial class FormPrincipal
+    partial class FormProdutos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             panel1 = new Panel();
             button3 = new Button();
             button5 = new Button();
             button2 = new Button();
-            btnProdutos = new Button();
+            button4 = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
+            BtnVoltar = new Button();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            label2 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -55,7 +58,7 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button2);
-            panel1.Controls.Add(btnProdutos);
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -117,24 +120,23 @@
             button2.TextAlign = ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = true;
             // 
-            // btnProdutos
+            // button4
             // 
-            btnProdutos.FlatAppearance.BorderSize = 0;
-            btnProdutos.FlatAppearance.MouseDownBackColor = Color.Red;
-            btnProdutos.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnProdutos.FlatStyle = FlatStyle.Flat;
-            btnProdutos.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnProdutos.ForeColor = Color.Red;
-            btnProdutos.Image = (Image)resources.GetObject("btnProdutos.Image");
-            btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProdutos.Location = new Point(35, 156);
-            btnProdutos.Name = "btnProdutos";
-            btnProdutos.Size = new Size(192, 68);
-            btnProdutos.TabIndex = 0;
-            btnProdutos.Text = "  Produtos";
-            btnProdutos.TextAlign = ContentAlignment.MiddleRight;
-            btnProdutos.UseVisualStyleBackColor = true;
-            btnProdutos.Click += btnProdutos_Click;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Red;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.Red;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(35, 156);
+            button4.Name = "button4";
+            button4.Size = new Size(192, 68);
+            button4.TabIndex = 0;
+            button4.Text = "  Produtos";
+            button4.TextAlign = ContentAlignment.MiddleRight;
+            button4.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -185,10 +187,22 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(BtnVoltar);
             panel4.Location = new Point(253, 214);
             panel4.Name = "panel4";
             panel4.Size = new Size(900, 436);
             panel4.TabIndex = 2;
+            // 
+            // BtnVoltar
+            // 
+            BtnVoltar.Location = new Point(794, 376);
+            BtnVoltar.Name = "BtnVoltar";
+            BtnVoltar.Size = new Size(75, 34);
+            BtnVoltar.TabIndex = 0;
+            BtnVoltar.Text = "Voltar";
+            BtnVoltar.UseVisualStyleBackColor = true;
+            BtnVoltar.Click += BtnVoltar_Click;
             // 
             // label1
             // 
@@ -222,7 +236,17 @@
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             // 
-            // FormPrincipal
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(45, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Produtos";
+            label2.Click += label2_Click;
+            // 
+            // FormProdutos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -237,13 +261,15 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FormPrincipal";
+            Name = "FormProdutos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Senac foods";
             Load += FormPrincipal_Load;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
@@ -259,11 +285,13 @@
         private Button button1;
         private Button button3;
         private Button button2;
-        private Button btnProdutos;
+        private Button button4;
         private PictureBox pictureBox1;
         private Button button5;
         private Label label1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Button BtnVoltar;
+        private Label label2;
     }
 }
